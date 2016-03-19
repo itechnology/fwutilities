@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "Controller\Controller.csproj", "{F99B97AB-99CB-46F3-B636-4E7014827DAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presenter", "Presenter\Presenter.csproj", "{6BEFE6C1-D8C1-478C-A9CC-011E705CED50}"
@@ -24,6 +26,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWatcherWindowsServiceTestApplication", "FileWatcherWindowsServiceTestApplication\FileWatcherWindowsServiceTestApplication.csproj", "{DD4A818A-CD67-4EFC-BC51-5EEEEC89893B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileWatcherWindowsService", "FileWatcherWindowsService\FileWatcherWindowsService.csproj", "{B279A197-9725-455C-A815-E18BCAF3D836}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "root", "root", "{45128BDA-DDAE-4192-BBD7-AEA905C12528}"
+	ProjectSection(SolutionItems) = preProject
+		humans.txt = humans.txt
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
