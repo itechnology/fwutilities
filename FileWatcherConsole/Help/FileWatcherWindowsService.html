@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - File Watcher Windows Service</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      File Watcher Windows Service
+    </h1>
+    <p>
+      File Watcher Windows Service is a simple windows service file watcher application
+      that can be configured using <a href="XmlConfigurationFiles.html">
+        XML configuration
+        files
+      </a>. The configuration is entered directly to the <a href="XmlConfigurationFiles.html">
+        XML configuration files
+      </a>. You can use <a href="XmlConfigurationFiles.html">
+        XML configuration
+        files
+      </a> from any other <a href="FileWatcherUtilities.html">File Watcher Utilities</a>
+      application.
+    </p>
+    <h2>
+      Service start parameters
+    </h2>
+    <p>
+      The application reads start parameters at startup. The start parameters can be used
+      to specify how the main application behaves. To configure how the file system is
+      monitored see <a href="XmlConfigurationFiles.html">XML configuration.</a>
+    </p>
+    <h3>
+      Start parameters usage
+    </h3>
+    <p>
+      FileWatcherWindowsService.exe [-a] [-b:x]
+    </p>
+    <table>
+      <tr>
+        <td>
+          <b>Command line argument</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          (default value if '-a' is not specified)
+        </td>
+        <td>
+          Synchronous execution of all started processes.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -a
+        </td>
+        <td>
+          Asynchronous execution of all started processes.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -b:x
+        </td>
+        <td>
+          Total process batch size is x (1-99). '-a' Must be specified. Limits amount of simultaneous
+          processes run by this application.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Logging
+    </h2>
+    <p>
+      See <a href="LogFile.html">Log file</a> for more details.
+    </p>
+    <h2>
+      Installation
+    </h2>
+    <p>
+      By following the manual installation procedure you may install multiple copies of
+      the File Watcher Windows Service service.
+    </p>
+    <h3>
+      Preconfigured installation
+    </h3>
+    <ol>
+      <li>Unzip the fwws_x.x.x.x_bin.zip to 'C:\FileWatcherWindowsService'</li>
+      <li>
+        Run 'C:\FileWatcherWindowsService\InstallFileWatcherWindowsService.bat'. This batch
+        file uses 'sc.exe' and it uninstalls any previous versions of the service and then
+        installs the new service. The service is registered as 'File Watcher Windows Service'.
+      </li>
+      <li>
+        After the installation you need to create <a href="XmlConfigurationFiles.html">
+          XML
+          configuration files
+        </a> and copy them to the 'C:\FileWatcherWindowsService' directory.
+        <a href="FileWatcherSimple.html">File Watcher Simple</a> is recomended for building
+        the <a href="XmlConfigurationFiles.html">XML configuration files</a>.
+      </li>
+      <li>The service can be started.</li>
+    </ol>
+    <h3>
+      Manual installation
+    </h3>
+    <ol>
+      <li>Unzip the fwws_x.x.x.x_bin.zip to a directory.</li>
+      <li>Register the service by using the 'sc.exe'.</li>
+      <li>
+        Edit 'FileWatcherWindowsService.exe.config' file. Change the value of the preconfigured
+        'xmlConfigurationFilePath', 'xmlSchemaConfigurationFilePath' and 'logFilePath' keys
+        to point to the installation directory.
+      </li>
+      <li>
+        After the installation you need to create <a href="XmlConfigurationFiles.html">
+          XML
+          configuration files
+        </a> and copy them to the installation directory. <a href="FileWatcherSimple.html">
+          File Watcher Simple
+        </a> is recomended for building the <a href="XmlConfigurationFiles.html">
+          XML configuration files
+        </a>.
+      </li>
+      <li>The service can be started.</li>
+    </ol>
+    <h2>
+      Known issues
+    </h2>
+    <p>
+      Shutdown may cause some long running processes run by the File Watcher Windows Service
+      to be terminated. This may cause loss of data if the process is terminated abnormally
+      due to the shutdown. Stopping the File Watcher Windows Service before shutdown is
+      advisable. This prevents the abnormal termination of the File Watcher Utilities
+      Service and abnormal termination of any processes run by it.
+    </p>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

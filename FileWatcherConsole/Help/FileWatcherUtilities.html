@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      File Watcher Utilities
+    </h1>
+    <p>
+      File Watcher Utilities project provides file system/directory monitoring utilities
+      with loggin and task processing support. The applications have multiple configuration
+      options. Source code libraries or binaries can be used to create a custom file system
+      monitor.
+    </p>
+    <h2>
+      Applications
+    </h2>
+    <p>
+      File Watcher Utilities currently contains multiple applications with different type
+      of user interface. The applications can be used together or seperately. <a href="FileWatcherSimple.html">
+        File Watcher Simple
+      </a> can be used to create <a href="XmlConfigurationFiles.html">
+        XML configuration files
+      </a> for other applications. It is also the recomended
+      option for editing and testing any configurations. Other applications support only
+      manual editing of the <a href="XmlConfigurationFiles.html">XML configuration files</a>.
+    </p>
+    <ul>
+      <li>
+        <a href="FileWatcherConsole.html">File Watcher Console</a> (command line version)
+      </li>
+      <li>
+        <a href="FileWatcherSimple.html">File Watcher Simple</a> (graphical user interface
+        version)
+      </li>
+      <li>
+        <a href="FileWatcherWindowsService.html">File Watcher Windows Service</a> (windows
+        service version)
+      </li>
+    </ul>
+    <h2>
+      Extensibility
+    </h2>
+    <p>
+      File Watcher Utilities applications doesn't support plugins because the variety
+      of applications and threading issues. Instead the File Watcher Utilities applications
+      support out of process type of extensibility. The File Watcher Utilities applications
+      can consume Windows Communication Foundation services (typically web services) that
+      use the File Watcher Utilities specific <a href="ServiceContracts.html">service contracts</a>.
+      The <a href="ServiceContracts.html">service contracts</a> allow developers to create
+      file streaming and file change information storing type of services.
+    </p>
+    <h2>
+      System requirements
+    </h2>
+    <ul>
+      <li>
+        Microsoft Windows 2000, Windows 2003 or Windows XP Professional or Home Edition,
+        Windows Vista, Windows 2008, Windows 7 or later.
+      </li>
+      <li>
+        Microsoft .NET Framework 4.0 or later or Microsoft .NET Framework 3.0 (Service Pack 2) or Microsoft .NET Framework 2.0 (Service Pack 2)<sup>1</sup>
+      </li>
+      <li>
+        Applications can be compiled and run with <a href="http://www.mono-project.com/Main_Page">Mono</a> on other operating systems. 
+        For more details see <a href="http://www.mono-project.com/Supported_Platforms">Supported Platforms - Mono</a>. 
+      </li>
+    </ul>
+    <p>
+      <sup>1</sup>Applications compiled with Microsoft .NET Framework 2.0 cannot call Windows Communication Foundation services.
+    </p>
+    <h2>
+      Licensing
+    </h2>
+    <p>
+      The File Watcher Utilities is licensed under GNU GENERAL PUBLIC LICENSE Version
+      2, June 1991. This license <b>
+        <i>doesn't include</i>
+      </b> the File Watcher Utilities <a href="ServiceContracts.html">
+        service contracts
+      </a>. The File Watcher Utilities <a href="ServiceContracts.html">
+        service
+        contracts
+      </a> are licensed under the GNU LESSER GENERAL PUBLIC LICENSE Version
+      2.1, February 1999 to allow extensibility of the File Watcher Utilities applications.
+    </p>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

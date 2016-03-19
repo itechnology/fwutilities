@@ -1,0 +1,4 @@
+/* AUTHORS */
+	Author: djmoby
+	Profile: https://sourceforge.net/u/djmoby/profile/
+	Project: https://sourceforge.net/projects/fwutilities/

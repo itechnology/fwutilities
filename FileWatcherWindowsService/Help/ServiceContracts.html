@@ -1,0 +1,379 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - Service contracts</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      Service contracts
+    </h1>
+    <p>
+      <a href="FileWatcherUtilities.html">File Watcher Utilities</a> applications can
+      consume Windows Communication Foundation services (typically web services) that
+      use the <a href="FileWatcherUtilities.html">File Watcher Utilities</a> specific
+      service contracts. The service contracts allow developers to create file streaming
+      and file change information storing type of services. The <a href="FileWatcherUtilities.html">
+        File Watcher Utilities
+      </a> source code contains sample implementations of these
+      service contracts. These service implementations can be used as starting point of
+      service development.
+    </p>
+    <h3>
+      Common scenarios solved by using services
+    </h3>
+    <ul>
+      <li>File transferring to a server</li>
+      <li>Delayed file processing</li>
+      <li>Book keeping of the changed files</li>
+    </ul>
+    <h3>
+      How to configure a service to be called
+    </h3>
+    <p>
+      <a href="FileWatcherUtilities.html">File Watcher Utilities</a> applications uses
+      the endpoint name of the Windows Communication Foundation service and the daemon
+      name of the file watcher to map the service to call. For this reason the service
+      endpoint name must be equal to the daemon name of the file watcher that calls the
+      service. When calling a file streaming service the <i>streamFile</i> (see <a href="XmlConfigurationFiles.html">
+        XML configuration
+      </a>) must be set to true or the ''Stream file to service''
+      (see <a href="FileWatcherSimple.html">File Watcher Simple</a>) must be selected.
+    </p>
+    <h2>
+      IFileWatcherService service contract
+    </h2>
+    <p>
+      IFileWatcherService service contract can be used to create file change information
+      storing type of service.
+    </p>
+    <h4>
+      Operations
+    </h4>
+    <p>
+      <b>SystemChangedRespDC SystemChanged(SystemChangedReqDC request)</b>
+    </p>
+    <ul>
+      <li>
+        <i>Description</i>: called when system is changed.
+      </li>
+      <li>
+        <i>Returns</i>: information about the handling of the system change.
+      </li>
+      <li>
+        <i>Remarks</i>: this method can fail by throwing an DefaultFault exception.
+      </li>
+    </ul>
+    <h3>
+      Data contracts
+    </h3>
+    <h3>
+      SystemChangedRespDC
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Property</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Message
+        </td>
+        <td>
+          Gets or sets message.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      SystemChangedReqDC
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Property</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ChangeType
+        </td>
+        <td>
+          Gets or sets the change type of the file or directory.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Checksum
+        </td>
+        <td>
+          Gets or sets file MD5 checksum.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DaemonName
+        </td>
+        <td>
+          Gets or sets the daemon name of the file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DateTime
+        </td>
+        <td>
+          Gets or sets the date and time of the file or directory change. Uses local time.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FileName
+        </td>
+        <td>
+          Gets or sets the name of the changed file or directory (relative path to directory
+          being watched).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FullPath
+        </td>
+        <td>
+          Gets or sets the full path of the changed file or directory.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Id
+        </td>
+        <td>
+          Gets or sets event identifier.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          MachineName
+        </td>
+        <td>
+          Gets or sets the machine name that send the message.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          OldFullPath
+        </td>
+        <td>
+          Gets or sets the old full path of the changed file or directory. Empty if file or
+          directory is not renamed.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      DefaultFault
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Property</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ErrorCode
+        </td>
+        <td>
+          Gets or sets error code.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Id
+        </td>
+        <td>
+          Gets or sets fault identifier.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Message
+        </td>
+        <td>
+          Gets or sets message.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Severity
+        </td>
+        <td>
+          Gets or sets severity.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      IFileWatcherStreamingService service contract
+    </h2>
+    <p>
+      IFileWatcherStreamingService service contract can be used to create file streaming
+      service.
+    </p>
+    <h4>
+      Operations
+    </h4>
+    <p>
+      <b>SystemChangedRespMC SystemChangedStreaming(SystemChangedReqMC request)</b>
+    </p>
+    <ul>
+      <li>
+        <i>Description</i>: called when system is changed.
+      </li>
+      <li>
+        <i>Returns</i>: information about the handling of the system change.
+      </li>
+      <li>
+        <i>Remarks</i>: this method can fail by throwing an DefaultFault exception.
+      </li>
+    </ul>
+    <h3>
+      Message contracts
+    </h3>
+    <h3>
+      SystemChangedReqMC
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Property</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          ChangeType
+        </td>
+        <td>
+          Gets or sets the change type of the file or directory.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Checksum
+        </td>
+        <td>
+          Gets or sets file MD5 checksum.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DaemonName
+        </td>
+        <td>
+          Gets or sets the daemon name of the file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          DateTime
+        </td>
+        <td>
+          Gets or sets the date and time of the file or directory change. Uses local time.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FileName
+        </td>
+        <td>
+          Gets or sets the name of the changed file or directory (relative path to directory
+          being watched).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FileStream
+        </td>
+        <td>
+          Gets or sets streamed file.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FileStreamLength
+        </td>
+        <td>
+          Gets or sets file stream length.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          FullPath
+        </td>
+        <td>
+          Gets or sets the full path of the changed file or directory.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Id
+        </td>
+        <td>
+          Gets or sets event identifier.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          MachineName
+        </td>
+        <td>
+          Gets or sets the machine name that send the message.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          OldFullPath
+        </td>
+        <td>
+          Gets or sets the old full path of the changed file or directory. Empty if file or
+          directory is not renamed.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      SystemChangedRespMC
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Property</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Message
+        </td>
+        <td>
+          Gets or sets message.
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

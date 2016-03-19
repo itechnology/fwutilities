@@ -1,0 +1,310 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - Log file</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      Log file
+    </h1>
+    <p>
+      <a href="FileWatcherUtilities.html">File Watcher Utilities</a> application creates
+      log file (fwatcher.log) in the application root folder. The application stores information
+      about the file changes and the processes into the log file. The application also
+      stores some application related infomation to the log file. See <a href="XmlConfigurationFiles.html">
+        XML configuration files
+      </a> or <a href="FileWatcherSimple.html">File Watcher Simple</a>
+      to specify what gets logged.
+    </p>
+    <h2>
+      Log message categories
+    </h2>
+    <table>
+      <tr>
+        <td>
+          <b>Message type</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Info
+        </td>
+        <td>
+          Log entry contains information.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Error
+        </td>
+        <td>
+          Log entry contains an error.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Warn
+        </td>
+        <td>
+          Log entry contains a warning.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Log messages by categories
+    </h2>
+    <h3>
+      Information
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Message</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' is started.
+        </td>
+        <td>
+          Daemon is started.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' is starting.
+        </td>
+        <td>
+          Daemon is starting.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' is stopped.
+        </td>
+        <td>
+          Daemon has stopped.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] File or folder {change type} '{full path}'.
+        </td>
+        <td>
+          File or folder has changed.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Process {file name} started by '{daemon name}' daemon has exited
+          with exit code {exit code}.
+        </td>
+        <td>
+          Process stared by the daemon has exited with exit code.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' process output data: '{output data}'.
+        </td>
+        <td>
+          Process started by the daemon sent output data.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' started '{file name}' {process id} process
+          with '{arguments}' arguments and with '{verb}' verb. Processes to run: {processes
+          to run}.
+        </td>
+        <td>
+          Daemon started a process with specified arguments and verb. Verb is usually empty
+          as it defaults to 'open'.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' is searching folder {full path}.
+        </td>
+        <td>
+          Daemon is seaching a folder to raise system generated file change events.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] [{service guid}] Daemon '{daemon name}' is about to call a service.
+        </td>
+        <td>
+          Daemon has queued a service call to a thread that is used to call a service at later
+          time. Service guid is used to identify the service call.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] [{service guid}] Daemon '{daemon name}' called a service and
+          it returned: '{message}'
+        </td>
+        <td>
+          Service call made by the daemon was successfull and the service returned the following
+          message string. Service guid is used to identify the service call.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] All processes have exited.
+        </td>
+        <td>
+          All processes run by the File Watcher Utilities application have exited.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Application started.
+        </td>
+        <td>
+          The File Watcher Utilities application was started without any errors.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Application stopped.
+        </td>
+        <td>
+          The File Watcher Utilities application cleanly shutdown without any errors.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Info] Daemon '{daemon name}' was recycled. Reason: {reason}
+        </td>
+        <td>
+          The file watcher recycled.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Errors
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Message</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] Buffer error in '{daemon name}' daemon. Reason: {reason}
+        </td>
+        <td>
+          Too many file system changes occured so the buffer of the daemon overflowed. See
+          reason for more details.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] Daemon '{daemon name}' is stopped. Path '{full path}' is invalid.
+        </td>
+        <td>
+          Daemon could not be started because the path is invalid and file watcher cannot
+          monitor it.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] Search error in '{daemon name}' daemon. Reason: {reason}
+        </td>
+        <td>
+          Daemon encountered an error when seaching files to raise system generated file system
+          change events. See reason for more details.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] [{service guid}] Daemon '{daemon name}' failed to create a
+          service proxy.
+        </td>
+        <td>
+          Daemon failed to create Windows Communication Foundation service proxy. Check that
+          Windows Communication Foundation configuration is correct and the daemon name is
+          equal to the end point name of the service to be called. Service guid is used to
+          identify the service call.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] [{service guid}] Error in service called by '{daemon name}'
+          daemon. Severity: {severity} ErrorCode: {error code} Reason: {reason} ErrorId: {error
+          id}
+        </td>
+        <td>
+          Service called by the daemon returned a fault contract message with the following
+          values. Service guid is used to identify the service call.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] [{service guid}] Error in service called by '{daemon name}'
+          daemon. Reason: {reason}
+        </td>
+        <td>
+          Service call made by the daemon failed for the following reason. Service guid is
+          used to identify the service call.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] Daemon '{daemon name}' process error data: '{error data}'.
+        </td>
+        <td>
+          Process started by the daemon sent error data.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Error] Error in process started by '{daemon name}' daemon. Reason:
+          {reason}
+        </td>
+        <td>
+          Process started by the daemon failed with the following reason.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Warnings
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Message</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          [{datetime}] [Warn] Process was canceled for '{daemon name}' daemon. Reason: {reason}
+          Path: '{full path}'
+        </td>
+        <td>
+          Process was not executed because the file was missing or the file reaming failed
+          or the file lock test failed.
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - File Watcher Console</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      File Watcher Console
+    </h1>
+    <p>
+      File Watcher Console is a simple command line file watcher application that can
+      be configured using <a href="XmlConfigurationFiles.html">XML configuration files</a>.
+      The configuration is entered directly to the <a href="XmlConfigurationFiles.html">
+        XML
+        configuration files
+      </a>. You can use <a href="XmlConfigurationFiles.html">
+        XML configuration
+        files
+      </a> from any other <a href="FileWatcherUtilities.html">File Watcher Utilities</a>
+      application.
+    </p>
+    <p>
+      <img src="FileWatcherConsole.png" alt="File Watcher Console" style="width: 309px;
+            height: 114px" />
+      <br />
+      <i>
+        <b>File Watcher Console</b>
+      </i>
+      <br />
+      <br />
+    </p>
+    <h2>
+      Command line arguments
+    </h2>
+    <p>
+      The application reads command line arguments from the command prompt at startup.
+      The command line arguments can be used to specify how the main application behaves.
+      To configure how the file system is monitored see <a href="XmlConfigurationFiles.html">
+        XML configuration files
+      </a>.
+    </p>
+    <h2>
+      Command line arguments usage
+    </h2>
+    <p>
+      FileWatcherConsole.exe [-a] [-r] [-b:x] | [-e | -l | /?]
+    </p>
+    <table>
+      <tr>
+        <td>
+          <b>Command line argument</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          (default value if '-a' is not specified)
+        </td>
+        <td>
+          Synchronous execution of all started processes.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -a
+        </td>
+        <td>
+          Asynchronous execution of all started processes.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -r
+        </td>
+        <td>
+          Runs queued processes when application is stopping.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -b:x
+        </td>
+        <td>
+          Total process batch size is x (1-99). '-a' Must be specified. Limits amount of simultaneous
+          processes run by this application.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -e
+        </td>
+        <td>
+          Write example XML configuration files.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          -l
+        </td>
+        <td>
+          Displays license.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          /?
+        </td>
+        <td>
+          Displays usage.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Example XML configuration files
+    </h2>
+    <p>
+      The application creates three different daemon configurations in the fwatcher.xml
+      XML configuration file when the '-e write example configuration files' command line
+      argument is specified. The example XML configuration sets the application to monitor
+      the application root folder for '*.txt' file changes.
+    </p>
+    <h3>
+      List of example daemons
+    </h3>
+    <table>
+      <tr>
+        <td>
+          Default 'notepad.exe' Daemon (monitors: *.txt)
+        </td>
+        <td>
+          Starts 'notepad.exe' when file change is detected. Opens the changed '*.txt' file.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Default 'calc.exe' Daemon (monitors: *.txt)
+        </td>
+        <td>
+          Starts 'calc.exe' when file change is detected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Default 'mspaint.exe' Daemon (monitors: *.txt)
+        </td>
+        <td>
+          Starts 'mspaint.exe' when file change is detected.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Logging
+    </h2>
+    <p>
+      See <a href="LogFile.html">Log file</a> for more details.
+    </p>
+    <h2>
+      Installation
+    </h2>
+    <p>
+      Unzip the fwc_x.x.x.x_bin.zip to a directory. The application can be installed to
+      different directories multiple times to allow multiple instances of the application
+      to run simultaneously.
+    </p>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

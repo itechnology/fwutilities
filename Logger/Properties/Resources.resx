@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentExceptionInvalidPath" xml:space="preserve">
+    <value>Invalid log file path.</value>
+  </data>
+  <data name="ArgumentExceptionMessageType" xml:space="preserve">
+    <value>Invalid message type.</value>
+  </data>
+  <data name="ArgumentNullException" xml:space="preserve">
+    <value>Argument is null.</value>
+  </data>
+  <data name="ChangeTypeSystemGenerated" xml:space="preserve">
+    <value>System generated</value>
+  </data>
+  <data name="MessageBufferError" xml:space="preserve">
+    <value>[{0}] [{1}] Buffer error in '{2}' daemon. Reason: {3}</value>
+  </data>
+  <data name="MessageDaemonPathError" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' is stopped. Path '{3}' is invalid.</value>
+  </data>
+  <data name="MessageDaemonStarted" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' is started.</value>
+  </data>
+  <data name="MessageDaemonStarting" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' is starting.</value>
+  </data>
+  <data name="MessageDaemonStopped" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' is stopped.</value>
+  </data>
+  <data name="MessageFileSystemChange" xml:space="preserve">
+    <value>[{0}] [{1}] File or folder {2} '{3}'.</value>
+  </data>
+  <data name="MessageFileWatcherRecycle" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' was recycled. Reason: {3}</value>
+  </data>
+  <data name="MessageFileWatcherRecycleReasonDirectoryNotFound" xml:space="preserve">
+    <value>Directory not found.</value>
+  </data>
+  <data name="MessageFileWatcherRecycleReasonError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageFileWatcherRecycleReasonRecycle" xml:space="preserve">
+    <value>Recycle</value>
+  </data>
+  <data name="MessageProcessCanceled" xml:space="preserve">
+    <value>[{0}] [{1}] Process was canceled for '{2}' daemon. Reason: {3} Path: '{4}'</value>
+  </data>
+  <data name="MessageProcessCanceledReasonFileIsMissing" xml:space="preserve">
+    <value>The file does not exist.</value>
+  </data>
+  <data name="MessageProcessCanceledReasonFileLockTestFailed" xml:space="preserve">
+    <value>The file lock test failed.</value>
+  </data>
+  <data name="MessageProcessCanceledReasonRenameFailed" xml:space="preserve">
+    <value>The renaming of the file failed.</value>
+  </data>
+  <data name="MessageProcessError" xml:space="preserve">
+    <value>[{0}] [{1}] Error in process started by '{2}' daemon. Reason: {3}</value>
+  </data>
+  <data name="MessageProcessErrorData" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' process error data: '{3}'.</value>
+  </data>
+  <data name="MessageProcessExited" xml:space="preserve">
+    <value>[{0}] [{1}] Process {2} started by '{3}' daemon has exited with exit code {4}.</value>
+  </data>
+  <data name="MessageProcessOutputData" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' process output data: '{3}'.</value>
+  </data>
+  <data name="MessageProcessStarted" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' started '{3}' {4} process with '{5}' arguments and with '{6}' verb. Processes to run: {7}.</value>
+  </data>
+  <data name="MessageSearchError" xml:space="preserve">
+    <value>[{0}] [{1}] Search error in '{2}' daemon. Reason: {3}</value>
+  </data>
+  <data name="MessageSearchProgess" xml:space="preserve">
+    <value>[{0}] [{1}] Daemon '{2}' is searching folder {3}.</value>
+  </data>
+  <data name="MessageServiceBeginCall" xml:space="preserve">
+    <value>[{0}] [{1}] [{3}] Daemon '{2}' is about to call a service.</value>
+  </data>
+  <data name="MessageServiceCalled" xml:space="preserve">
+    <value>[{0}] [{1}] [{3}] Daemon '{2}' called a service and it returned: '{4}'</value>
+  </data>
+  <data name="MessageServiceDefaultError" xml:space="preserve">
+    <value>[{0}] [{1}] [{3}] Error in service called by '{2}' daemon. Severity: {4} ErrorCode: {5} Reason: {6} ErrorId: {7} </value>
+  </data>
+  <data name="MessageServiceError" xml:space="preserve">
+    <value>[{0}] [{1}] [{3}] Error in service called by '{2}' daemon. Reason: {4}</value>
+  </data>
+  <data name="MessageServiceErrorDataIsMissing" xml:space="preserve">
+    <value>The service did not send the error information.</value>
+  </data>
+  <data name="MessageServiceProxyCreationError" xml:space="preserve">
+    <value>[{0}] [{1}] [{3}] Daemon '{2}' failed to create a service proxy.</value>
+  </data>
+  <data name="MessageSystemGenerated" xml:space="preserve">
+    <value>changed (system generated)</value>
+  </data>
+  <data name="MessageTypeError" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageTypeInfo" xml:space="preserve">
+    <value>Info</value>
+  </data>
+  <data name="MessageTypeWarn" xml:space="preserve">
+    <value>Warn</value>
+  </data>
+</root>

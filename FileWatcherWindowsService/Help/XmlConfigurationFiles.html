@@ -1,0 +1,677 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - XML configuration files</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      XML configuration files
+    </h1>
+    <p>
+      The <a href="FileWatcherUtilities.html">File Watcher Utilities</a> application reads
+      XML configuration files from the application root folder. The XML configuration
+      file (fwatcher.xml) specifies how the file system is monitored and what actions
+      are performed when there is a file system change. The XML configuration file provides
+      many configuration options that can suit specific needs. You may configure as many
+      file watchers (file system monitors) as is needed. Application starts a file watcher
+      for each config table (configuration set) in the XML configuration file.
+    </p>
+    <table>
+      <tr>
+        <td>
+          <b>File name</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          fwatcher.xml
+        </td>
+        <td>
+          This file contains the actual configuration information.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          fwatcher.xsl
+        </td>
+        <td>
+          This file contains structure of the configuration.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      XML configuration file structure
+    </h2>
+    <h3>
+      config table (the &lt;config&gt; element)
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Element name</b>
+        </td>
+        <td>
+          <b>Description</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          daemonName
+        </td>
+        <td>
+          Unique name of the file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          startDaemon
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to start file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          displayFileSystemChange
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to display file system change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          logFileSystemChange
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to log file system change to log file.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          logFileSystemSearchError
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to log file system search error to log file.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          displayFileSystemSearchError
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to display file system search error.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          logFileSystemSearchProgress
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to log file system search process to log file.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          displayFileSystemSearchProgress
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to display file system search process.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          path
+        </td>
+        <td>
+          Path of the directory to watch.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          filter
+        </td>
+        <td>
+          File name filter string.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          generateFileSystemEventsAtStartup
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to generate file system events at startup.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          generatedEventFileNameRegularExpressionFilter
+        </td>
+        <td>
+          Generated file system event file name regular expression filter.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          changedRegularExpressionFilter
+        </td>
+        <td>
+          Changed event file name regular expression filter.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          createdRegularExpressionFilter
+        </td>
+        <td>
+          Created file name regular expression filter.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          deletedRegularExpressionFilter
+        </td>
+        <td>
+          Deleted event file name regular expression filter.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          renamedRegularExpressionFilter
+        </td>
+        <td>
+          Renamed event file name regular expression filter.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          includeSubdirectories
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to monitor subdirectories.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          internalBufferSize
+        </td>
+        <td>
+          File watcher internal buffer size. (The default buffer size is 8192).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          subscribeToBufferErrorEvent
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to subscribe to file watcher buffer error event.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          subscribeToChangedEvent
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to monitor file change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          subscribeToCreatedEvent
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to monitor file creation.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          subscribeToDeletedEvent
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to monitor file deletion.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          subscribeToRenamedEvent
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to monitor file renaming.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyAttribute
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file of folder attribute change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyCreationTime
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file or folder creation time change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyDirectoryName
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify directory name change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyFileName
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file or folder name change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyLastAccess
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file or folder last access change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifyLastWrite
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file or folder last write change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifySecurity
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify security change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          notifySize
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to notify file or folder size change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          startProcess
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to start process when file watcher detects file system
+          change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          logProcessStart
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to log process start.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          logProcessEnd
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to log process end.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processFileName
+        </td>
+        <td>
+          Name of the process executable (or document). Cannot be empty. Not applied when
+          'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processArguments
+        </td>
+        <td>
+          Process arguments. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processUseFileNameAsArgument
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to use changed file as argument. Not applied when
+          'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processArgumentsFileNameEscapeString
+        </td>
+        <td>
+          Arguments escape string for the file name. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processUseOldFileNameAsArgument
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to use old file name as argument. Not applied when
+          'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processArgumentsOldFileNameEscapeString
+        </td>
+        <td>
+          Arguments escape string for the old file name. Not applied when 'callService' is
+          True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processUseChangeTypeAsArgument
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to use the file system change type as argument. Not
+          applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processArgumentsChangeTypeEscapeString
+        </td>
+        <td>
+          Arguments escape string for the file system change type. Not applied when 'callService'
+          is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processVerb
+        </td>
+        <td>
+          Process verb. If not specified the default verb "open" is used. Not applied when
+          'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processWorkingDirectory
+        </td>
+        <td>
+          Process working directory. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processUseShellExecute
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to use shell execute method. Not applied when 'callService'
+          is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processCreateNoWindow
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to create no window. Ignored if processUseShellExecute
+          is True. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processWindowStyle
+        </td>
+        <td>
+          Process window style: normal | minimized | maximized | hidden. Set processShellExecute
+          to True. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processSynchronizedExecution
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to execute this process synchronized. Blocks other
+          processes until the process is done. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processMaxWaitTime
+        </td>
+        <td>
+          Amount of time in milliseconds to wait for the synchronized process to exit. -1
+          to wait infinite. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processRedirectStandardError
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to redirect process standard error to this application.
+          Cannot be used if processUseShellExecute is True. Not applied when 'callService'
+          is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processRedirectStandardOutput
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to redirect process standard output to this application.
+          Cannot be used if processUseShellExecute is True. Not applied when 'callService'
+          is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processLoadUserProfile
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to load user profile to execute process. Not applied
+          when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processDomain
+        </td>
+        <td>
+          Process user profile domain. Saved as plain text. Not applied when 'callService'
+          is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processUserName
+        </td>
+        <td>
+          Process user profile user name. Saved as plain text. Must be empty if processUseShellExecute
+          is True. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processPassword
+        </td>
+        <td>
+          Process user profile password. Saved as plain text. Must be empty if processUseShellExecute
+          is True. Not applied when 'callService' is True.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processBatchSize
+        </td>
+        <td>
+          Process batch size (limits amount of simultaneous service calls or processes run
+          by this file watcher). Zero value for no limit.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processFileMustExist
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> to not to run the process if file does not exist.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processDelay
+        </td>
+        <td>
+          Process delay in milliseconds.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processLockFile
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> to test for file lock.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processLockFileLastWriteDelay
+        </td>
+        <td>
+          The file last write time must occur specified amount of milliseconds before. The
+          process will be requeued if the last write time condition is not met. This counts
+          as a retry. Otherwise the file is tested for a file lock.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processLockFileRetries
+        </td>
+        <td>
+          File lock test retries. Zero for infinite.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          processLockFileRetriesQueueLimit
+        </td>
+        <td>
+          Preserves the specified amount of processes even if the file lock retries count
+          is met. The specified value is compared to the global process queue size shared
+          among all file watchers. If the value is not greater than the global queue size
+          the process is re-enqueued. Otherwise the process is removed from the queue.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          callService
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to call Windows Communication Foundation service when
+          the file watcher detects a file system change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          streamFile
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to stream the changed file to Windows Communication
+          Foundation service.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          tryRenameFile
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to rename file before processing it.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          tryRenameFileRetries
+        </td>
+        <td>
+          Rename retries.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          filteredMode
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to suppress duplicate created, changed and deleted file system events.
+          The filter uses the full path of the file or folder and the file system event type to
+          filter duplicate file system events.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          filteredModeFilterTimeout
+        </td>
+        <td>
+          Duplicate file system event suppression timeout in minutes.
+          This value should always be set as low as possible to minimize the use of system resources.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          pollDirectory
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to poll directory for new (created) and changed files. Changed or created 
+          file system events must be monitored. Only new/changed files since the last poll will generate artificial
+          file change event. Generated events can be filtered and duplicate created or/and changed events can be suppressed.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          directoryPollInterval
+        </td>
+        <td>
+          Directory polling interval in minutes. This time should be longer than 'Duplicate file system event suppression timeout' if duplicate file system event suppression is used.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          recycleFileWatcher
+        </td>
+        <td>
+          <b>True</b> | <b>False</b> if to allow file watcher recycling. File watcher can be recycle on error or when directory is not found or when recycle timeout elapses.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          recycleInterval
+        </td>
+        <td>
+          Recycle file watcher after x minutes. File watcher will be recycle whenever possible.
+        </td>
+      </tr>
+    </table>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

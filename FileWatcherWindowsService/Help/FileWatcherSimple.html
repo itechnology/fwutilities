@@ -1,0 +1,1100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>File Watcher Utilities - File Watcher Simple</title>
+    <link rel="stylesheet" type="text/css" href="Help.css" />
+  </head>
+  <body>
+    <h1>
+      File Watcher Simple
+    </h1>
+    <p>
+      File Watcher Simple is a simple file watcher application with a grahical user interface.
+      It allows the user to create file watchers easily without manual editing of <a href="XmlConfigurationFiles.html">
+        XML configuration files
+      </a>. You can use <a href="XmlConfigurationFiles.html">
+        XML configuration
+        files
+      </a> from any other <a href="FileWatcherUtilities.html">File Watcher Utilities</a>
+      application.
+    </p>
+    <p>
+      <img src="FileWatcherSimple.png" alt="File Watcher Simple" style="width: 324px; height: 242px" />
+      <br />
+      <i>
+        <b>File Watcher Simple</b>
+      </i>
+      <br />
+      <br />
+    </p>
+    <h2>
+      Tabs
+    </h2>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File wathcers
+        </td>
+        <td>
+          To display list of configured file watchers and their state.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log messages
+        </td>
+        <td>
+          To display frequently updated list of log messages.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Menus
+    </h2>
+    <h3>
+      File
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Exit
+        </td>
+        <td>
+          To exit the application.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Edit
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          New...
+        </td>
+        <td>
+          To create and configure new file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Delete...
+        </td>
+        <td>
+          To delete the selected file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Properties...
+        </td>
+        <td>
+          To configure the selected file watcher.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Run
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Start
+        </td>
+        <td>
+          To start the selected file watcher
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Start all
+        </td>
+        <td>
+          To start all enabled file wathcers.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Stop
+        </td>
+        <td>
+          To stop the selected file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Stop all
+        </td>
+        <td>
+          To stop all running file watchers.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Tools
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Options...
+        </td>
+        <td>
+          To configure the application.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Help
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Help
+        </td>
+        <td>
+          To get help.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          License
+        </td>
+        <td>
+          To view application license.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          About
+        </td>
+        <td>
+          To view application version information.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Options window
+    </h2>
+    <h3>
+      Application
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Synchronous execution of all started processes
+        </td>
+        <td>
+          To run only one process at once.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Run queued processes when all file watchers are stopped
+        </td>
+        <td>
+          To run all processes that are queued after stopping the file watchers.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process batch size x
+        </td>
+        <td>
+          To limit number of simultaneously running process to x.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Start all enabled file watchers at startup
+        </td>
+        <td>
+          To start all file watchers automatically when the File Watcher Simple application
+          is launched.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Advanced
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Amount of log messages to display x
+        </td>
+        <td>
+          To limit amount of log messages displayed in Log messages tab to x.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Properties window
+    </h2>
+    <h3>
+      General
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File watcher daemon name
+        </td>
+        <td>
+          To give unique name to your file watcher.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Enable daemon
+        </td>
+        <td>
+          To enable daemon so that it can be started.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Path to the directory to watch
+        </td>
+        <td>
+          To specify the directory to monitor.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Monitor subdirectories
+        </td>
+        <td>
+          To specify if the file watcher should monitor subdirectories.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Generate file system events at startup for each found file
+        </td>
+        <td>
+          To generate artificial file change event for each file in the monitored directory.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Poll directory for new (created) and changed files
+        </td>
+        <td>
+          To poll directory for new (created) and changed files. Changed or created file system 
+          events must be monitored. Only new/changed files since the last poll will generate artificial 
+          file change event. Generated events can be filtered and duplicate created or/and changed 
+          events can be suppressed.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Directory polling interval in minutes:
+        </td>
+        <td>
+          To specify directory poll interval in minutes. This time should be longer than 'Duplicate 
+          file system event suppression timeout' if duplicate file system event suppression is used.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Allow file watcher recycling
+        </td>
+        <td>
+          To allow file watcher recycling. File watcher can be recycle on error or when directory is not found or when recycle timeout elapses.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Always recycle file watcher after x minutes
+        </td>
+        <td>
+          To always recycle file watcher after x minutes. File watcher will be recycle whenever possible.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      File system events
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder changed
+        </td>
+        <td>
+          To monitor file or folder change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder created
+        </td>
+        <td>
+          To monitor file or folder creation.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder deleted
+        </td>
+        <td>
+          To monitor file or folder deletion.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder renamed
+        </td>
+        <td>
+          To monitor file or folder renaming.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Attribute (changed event)
+        </td>
+        <td>
+          To monitor file or folder attribute change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Creation time (changed event)
+        </td>
+        <td>
+          To monitor file or folder creation time change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Directory name (created, deleted and renamed event)
+        </td>
+        <td>
+          To monitor directory name change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File name (created, deleted and renamed event)
+        </td>
+        <td>
+          To monitor file name change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last access (changed event)
+        </td>
+        <td>
+          To monitor file or folder last access change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Last write (changed event)
+        </td>
+        <td>
+          To monitor file or folder last write change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Security (changed event)
+        </td>
+        <td>
+          To monitor file or folder security change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Size (changed event)
+        </td>
+        <td>
+          To monitor file or folder size change.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Filters
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Main file name filter string
+        </td>
+        <td>
+          To globally filter file or folder changed, created, deleted and renamed events.
+          This is a like expression and it is applied before any regular expression filters.
+          The filter uses the file or folder name.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder changed filter
+        </td>
+        <td>
+          To filter file or folder changed type events. This is a regular expression. The
+          filter uses the full path of the file or folder when it is filtering the values.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder created filter
+        </td>
+        <td>
+          To filter file or folder created type events. This is a regular expression. The
+          filter uses the full path of the file or folder when it is filtering the values.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder deleted filter
+        </td>
+        <td>
+          To filter file or folder deleted type events. This is a regular expression. The
+          filter uses the full path of the file or folder when it is filtering the values.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File or folder renamed filter
+        </td>
+        <td>
+          To filter file or folder renamed type events. This is a regular expression. The
+          filter uses the full path of the file or folder when it is filtering the values.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          System generated event filter
+        </td>
+        <td>
+          To filter system generated events. This is a regular expression. The filter uses
+          the file name when it is filtering the values.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Filtered mode
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Suppress duplicate created, changed and deleted file system events
+        </td>
+        <td>
+          To suppress duplicate created, changed and deleted file system events.
+          The filter uses the full path of the file or folder and the file system event type to
+          filter duplicate file system events.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Duplicate file system event suppression timeout in minutes x
+        </td>
+        <td>
+          To specify how long the file system event for a specific file or folder will be suppressed.
+          This value should always be set as low as possible to minimize the use of system resources.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Call service
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Call service when file system change is detected
+        </td>
+        <td>
+          To call Windows Communication Foundation service when file change is detected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Stream file to service
+        </td>
+        <td>
+          To stream changed file to Windows Communication Foundation service.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Process
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process executable
+        </td>
+        <td>
+          To specify process executable which is launched when a file changed detected. Not
+          applied when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Start process when file system change is detected
+        </td>
+        <td>
+          To enable process to be launched when a file change is detected. Not applied when
+          'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process verb
+        </td>
+        <td>
+          To specify a verb for the process. If not specified the default verb "open" is used.
+          Not applied when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process working directory
+        </td>
+        <td>
+          To specify working directory for the process. Not applied when 'Call service when
+          file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process window style
+        </td>
+        <td>
+          Process window style to be used. This can be ignored by the process. Not applied
+          when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process batch size x
+        </td>
+        <td>
+          To limit number of simultaneously running service calls or processes launched by
+          this file watcher to x.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Process arguments
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process arguments
+        </td>
+        <td>
+          To specify process arguments for the process. Not applied when 'Call service when
+          file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process arguments file name escape string
+        </td>
+        <td>
+          To specify an escape string for the file name that can be used in 'Process arguments'
+          as a placeholder. Not applied when 'Call service when file system change is detected'
+          is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Use file name as argument
+        </td>
+        <td>
+          To replace string specified in 'Process arguments file name escape string' from
+          'Process arguments' with the file name. Not applied when 'Call service when file
+          system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process arguments old file name escape string
+        </td>
+        <td>
+          To specify an escape string for the old file name that can be used in 'Process arguments'
+          as a placeholder. Not applied when 'Call service when file system change is detected'
+          is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Use old file name as argument
+        </td>
+        <td>
+          To replace string specified in 'Process arguments file name escape string' from
+          'Process arguments' with the old file name. Not applied when 'Call service when
+          file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process arguments change type escape string
+        </td>
+        <td>
+          To specify an escape string for the change type that can be used in 'Process arguments'
+          as a placeholder. Not applied when 'Call service when file system change is detected'
+          is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Use change type as argument
+        </td>
+        <td>
+          To replace string specified in 'Process arguments change type escape string' from
+          'Process arguments' with the change type. Not applied when 'Call service when file
+          system change is detected' is selected.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Process advanced
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Use shell execute method
+        </td>
+        <td>
+          To use shell execute method.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Create no window
+        </td>
+        <td>
+          To not to create a window. Ignored if 'Use shell execute method' is selected. Not
+          applied when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process redirect standard output
+        </td>
+        <td>
+          To redirect process standard output to this application. Cannot be used if 'Use
+          shell execute method' is not selected. Not applied when 'Call service when file
+          system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process redirect standard error
+        </td>
+        <td>
+          To redirect process standard error to this application. Cannot be used if 'Use shell
+          execute method' is not selected. Not applied when 'Call service when file system
+          change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Synchronized execution of process
+        </td>
+        <td>
+          To execute this process synchronized. Blocks other processes until the process is
+          done. Not applied when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Synchronized process maximum wait time in milliseconds x
+        </td>
+        <td>
+          To specify amount of time in milliseconds to wait for the synchronized process to
+          exit. -1 to wait infinite. Not applied when 'Call service when file system change
+          is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Load user profile
+        </td>
+        <td>
+          To use the specified user profile to execute the process. Not applied when 'Call
+          service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Domain
+        </td>
+        <td>
+          To specify the domain. Not applied when 'Call service when file system change is
+          detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          User name
+        </td>
+        <td>
+          To specify the user. Must be empty if 'Use shell execute method' is selected. Not
+          applied when 'Call service when file system change is detected' is selected.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Password
+        </td>
+        <td>
+          To specify the password. Saved as plain text. Must be empty if 'Use shell execute
+          method' is selected. Not applied when 'Call service when file system change is detected'
+          is selected.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      File processing
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Do not run the process or call the service if the file does not exist.
+        </td>
+        <td>
+          To not to call service or execute process if the changed file no longer exists.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Process or service delay in milliseconds x
+        </td>
+        <td>
+          To delay execution or service call by x milliseconds.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Test for file lock
+        </td>
+        <td>
+          To try open the changed file before handing it to process or service.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Retries (zero value for infinite) x
+        </td>
+        <td>
+          To specifity how many times the file is tried to be opened.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Preserve processes (even if retries count is reached) x
+        </td>
+        <td>
+          To preserve x processes even if the file lock retries count is met. The specified
+          value is compared to the global process queue size shared among all file watchers.
+          If the value is not greater than the global queue size the process is re-enqueued.
+          Otherwise the process is removed from the queue.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          The file last write time must occur milliseconds before x
+        </td>
+        <td>
+          To specify that the file last write time must occur x milliseconds before. The process
+          will be requeued if the last write time condition is not met. This counts as a retry.
+          Otherwise the file is tested for a file lock.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      File renaming
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Rename file before processing it
+        </td>
+        <td>
+          To try to rename file before processing it.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Rename retries x
+        </td>
+        <td>
+          To specify how many times the file is tried to be renamed.
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Logging and messages
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log file system change
+        </td>
+        <td>
+          To log file system change.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log process start
+        </td>
+        <td>
+          To log proces start.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log process end
+        </td>
+        <td>
+          To log process end.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log file system search error
+        </td>
+        <td>
+          To log errors when file watcher is searching files.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Log file system search progress
+        </td>
+        <td>
+          To log progress when file watcher is searching files.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Display file system change message
+        </td>
+        <td>
+          To display message when file system changes (File Watcher Console only).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Display file system search error message
+        </td>
+        <td>
+          To display error messages when file system is searching files (File Watcher Console
+          only).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Display file system search progress message
+        </td>
+        <td>
+          To display progress messages when file system is searching files (File Watcher Console
+          only).
+        </td>
+      </tr>
+    </table>
+    <h3>
+      Advanced
+    </h3>
+    <table>
+      <tr>
+        <td>
+          <b>Select this</b>
+        </td>
+        <td>
+          <b>To do this</b>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          File watcher internal buffer size x
+        </td>
+        <td>
+          To set file watcher internal buffer size to x.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Display and log error messages on buffer overflow
+        </td>
+        <td>
+          To display and log error messages on buffer overflow.
+        </td>
+      </tr>
+    </table>
+    <h2>
+      Logging
+    </h2>
+    <p>
+      See <a href="LogFile.html">Log file</a> for more details.
+    </p>
+    <h2>
+      Installation
+    </h2>
+    <p>
+      Unzip the fws_x.x.x.x_bin.zip to a directory. The application can be installed to
+      different directories multiple times to allow multiple instances of the application
+      to run simultaneously.
+    </p>
+    <hr />
+    <p>
+      Copyright &copy; 2006-2013 Jussi Hiltunen
+    </p>
+  </body>
+</html>

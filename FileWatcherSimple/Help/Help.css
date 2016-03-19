@@ -1,0 +1,104 @@
+body 
+{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+table
+{
+	font-size: 70%; 
+	vertical-align: top; 
+	width: 100%;
+	border-width: 0px 0px 0px 0px; 
+	border-color: rgb(0, 0, 0); 
+	border-style: solid;
+}
+
+td
+{
+	width: 50%;
+	border-width: 1px 1px 1px 1px; 
+	border-color: rgb(200, 200, 200); 
+	border-style: solid;
+	padding: 4px, 4px, 4px, 4px; 
+}
+
+h1
+{
+	font-size: 95%; 
+	background-color: #99ccff; 
+	vertical-align: text-top; 
+	color: rgb(0, 0, 0); 
+	font-size: larger; 
+	border-width: 1px 1px 1px 1px; 
+	border-color: rgb(0, 0, 0); 
+	border-style: solid; 
+	padding-bottom: 10px; 
+	padding-top: 10px;
+}
+
+h2
+{
+    font-size: 85%; 
+	width: 100%;
+	font-weight: bold; 
+	background-color: rgb(200, 200, 200); 
+	border-width: 1px 1px 1px 1px; 
+	border-color: rgb(0, 0, 0); 
+	border-style: solid;
+}
+
+h3
+{
+    font-size: 75%; 
+	width: 100%;
+	font-weight: bold; 
+	background-color: rgb(200, 200, 200); 
+	border-width: 1px 1px 1px 1px; 
+	border-color: rgb(0, 0, 0); 
+	border-style: solid;
+}
+
+h4
+{
+    font-size: 75%; 
+	width: 100%;
+	font-weight: bold; 
+	background-color: rgb(200, 200, 200); 
+	border-width: 1px 1px 1px 1px; 
+	border-color: rgb(0, 0, 0); 
+	border-style: solid;
+}
+
+a:hover 
+{
+	color: #99ccff; 
+	background-color: rgb(255, 255, 255); 
+	text-decoration: none; 
+}
+
+p
+{
+    font-size: 70%; 
+}
+
+ul
+{
+    font-size: 70%; 
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;   
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+ol
+{
+    font-size: 70%;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;   
+    margin-right: 0px;
+    margin-top: 0px;
+}

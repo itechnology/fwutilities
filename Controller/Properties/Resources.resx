@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentExceptionChangedFilter" xml:space="preserve">
+    <value>Changed regular expression filter is invalid.</value>
+  </data>
+  <data name="ArgumentExceptionCreatedFilter" xml:space="preserve">
+    <value>Created regular expression filter is invalid.</value>
+  </data>
+  <data name="ArgumentExceptionDaemonNameAreNotUnique" xml:space="preserve">
+    <value>Daemon names are not unique.</value>
+  </data>
+  <data name="ArgumentExceptionDaemonNameIsNull" xml:space="preserve">
+    <value>Daemon name is null.</value>
+  </data>
+  <data name="ArgumentExceptionDaemonNotFound" xml:space="preserve">
+    <value>Daemon not found.</value>
+  </data>
+  <data name="ArgumentExceptionDeletedFilter" xml:space="preserve">
+    <value>Deleted regular expression filter is invalid.</value>
+  </data>
+  <data name="ArgumentExceptionDuplicateArgumentEscapeString" xml:space="preserve">
+    <value>Duplicate argument escape string.</value>
+  </data>
+  <data name="ArgumentExceptionDuplicateDaemonName" xml:space="preserve">
+    <value>Duplicate daemon name.</value>
+  </data>
+  <data name="ArgumentExceptionGeneratedEventFileNameFilter" xml:space="preserve">
+    <value>Generated event file name regular expression filter is invalid.</value>
+  </data>
+  <data name="ArgumentExceptionRenamedFilter" xml:space="preserve">
+    <value>Renamed regular expression filter is invalid.</value>
+  </data>
+  <data name="ArgumentNullException" xml:space="preserve">
+    <value>Argument is null.</value>
+  </data>
+  <data name="ArgumentsStringIsTooLongException" xml:space="preserve">
+    <value>Arguments string is too long.</value>
+  </data>
+  <data name="ColumnChangedRegularExpressionFilter" xml:space="preserve">
+    <value>changedRegularExpressionFilter</value>
+  </data>
+  <data name="ColumnCreatedRegularExpressionFilter" xml:space="preserve">
+    <value>createdRegularExpressionFilter</value>
+  </data>
+  <data name="ColumnDaemonName" xml:space="preserve">
+    <value>daemonName</value>
+  </data>
+  <data name="ColumnDeletedRegularExpressionFilter" xml:space="preserve">
+    <value>deletedRegularExpressionFilter</value>
+  </data>
+  <data name="ColumnDisplayFileSystemChange" xml:space="preserve">
+    <value>displayFileSystemChange</value>
+  </data>
+  <data name="ColumnFilter" xml:space="preserve">
+    <value>filter</value>
+  </data>
+  <data name="ColumnGenerateFileSystemEventsAtStartup" xml:space="preserve">
+    <value>generateFileSystemEventsAtStartup</value>
+  </data>
+  <data name="ColumnGenereatedEventFileNameRegularExpressionFilter" xml:space="preserve">
+    <value>generatedEventFileNameRegularExpressionFilter</value>
+  </data>
+  <data name="ColumnIncludeSubdirectories" xml:space="preserve">
+    <value>includeSubdirectories</value>
+  </data>
+  <data name="ColumnInternalBufferSize" xml:space="preserve">
+    <value>internalBufferSize</value>
+  </data>
+  <data name="ColumnLogFileSystemChange" xml:space="preserve">
+    <value>logFileSystemChange</value>
+  </data>
+  <data name="ColumnLogProcessEnd" xml:space="preserve">
+    <value>logProcessEnd</value>
+  </data>
+  <data name="ColumnLogProcessStart" xml:space="preserve">
+    <value>logProcessStart</value>
+  </data>
+  <data name="ColumnNotifyAttribute" xml:space="preserve">
+    <value>notifyAttribute</value>
+  </data>
+  <data name="ColumnNotifyCreationTime" xml:space="preserve">
+    <value>notifyCreationTime</value>
+  </data>
+  <data name="ColumnNotifyDirectoryName" xml:space="preserve">
+    <value>notifyDirectoryName</value>
+  </data>
+  <data name="ColumnNotifyFileName" xml:space="preserve">
+    <value>notifyFileName</value>
+  </data>
+  <data name="ColumnNotifyLastAccess" xml:space="preserve">
+    <value>notifyLastAccess</value>
+  </data>
+  <data name="ColumnNotifyLastWrite" xml:space="preserve">
+    <value>notifyLastWrite</value>
+  </data>
+  <data name="ColumnNotifySecurity" xml:space="preserve">
+    <value>notifySecurity</value>
+  </data>
+  <data name="ColumnNotifySize" xml:space="preserve">
+    <value>notifySize</value>
+  </data>
+  <data name="ColumnPath" xml:space="preserve">
+    <value>path</value>
+  </data>
+  <data name="ColumnProcessArguments" xml:space="preserve">
+    <value>processArguments</value>
+  </data>
+  <data name="ColumnProcessArgumentsChangeTypeEscapeString" xml:space="preserve">
+    <value>processArgumentsChangeTypeEscapeString</value>
+  </data>
+  <data name="ColumnProcessArgumentsFileNameEscapeString" xml:space="preserve">
+    <value>processArgumentsFileNameEscapeString</value>
+  </data>
+  <data name="ColumnProcessArgumentsOldFileNameEscapeString" xml:space="preserve">
+    <value>processArgumentsOldFileNameEscapeString</value>
+  </data>
+  <data name="ColumnProcessCreateNoWindow" xml:space="preserve">
+    <value>processCreateNoWindow</value>
+  </data>
+  <data name="ColumnProcessDomain" xml:space="preserve">
+    <value>processDomain</value>
+  </data>
+  <data name="ColumnProcessFileName" xml:space="preserve">
+    <value>processFileName</value>
+  </data>
+  <data name="ColumnProcessLoadUserProfile" xml:space="preserve">
+    <value>processLoadUserProfile</value>
+  </data>
+  <data name="ColumnProcessMaxWaitTime" xml:space="preserve">
+    <value>processMaxWaitTime</value>
+  </data>
+  <data name="ColumnProcessPassword" xml:space="preserve">
+    <value>processPassword</value>
+  </data>
+  <data name="ColumnProcessRedirectStandardError" xml:space="preserve">
+    <value>processRedirectStandardError</value>
+  </data>
+  <data name="ColumnProcessRedirectStandardOutput" xml:space="preserve">
+    <value>processRedirectStandardOutput</value>
+  </data>
+  <data name="ColumnProcessSynchronizedExecution" xml:space="preserve">
+    <value>processSynchronizedExecution</value>
+  </data>
+  <data name="ColumnProcessUseChangeTypeAsArgument" xml:space="preserve">
+    <value>processUseChangeTypeAsArgument</value>
+  </data>
+  <data name="ColumnProcessUseFileNameAsArgument" xml:space="preserve">
+    <value>processUseFileNameAsArgument</value>
+  </data>
+  <data name="ColumnProcessUseOldFileNameAsArgument" xml:space="preserve">
+    <value>processUseOldFileNameAsArgument</value>
+  </data>
+  <data name="ColumnProcessUserName" xml:space="preserve">
+    <value>processUserName</value>
+  </data>
+  <data name="ColumnProcessUseShellExecute" xml:space="preserve">
+    <value>processUseShellExecute</value>
+  </data>
+  <data name="ColumnProcessVerb" xml:space="preserve">
+    <value>processVerb</value>
+  </data>
+  <data name="ColumnProcessWindowStyle" xml:space="preserve">
+    <value>processWindowStyle</value>
+  </data>
+  <data name="ColumnProcessWorkingDirectory" xml:space="preserve">
+    <value>processWorkingDirectory</value>
+  </data>
+  <data name="ColumnRenamedRegularExpressionFilter" xml:space="preserve">
+    <value>renamedRegularExpressionFilter</value>
+  </data>
+  <data name="ColumnStartDaemon" xml:space="preserve">
+    <value>startDaemon</value>
+  </data>
+  <data name="ColumnStartProcess" xml:space="preserve">
+    <value>startProcess</value>
+  </data>
+  <data name="ColumnSubscribeToBufferErrorEvent" xml:space="preserve">
+    <value>subscribeToBufferErrorEvent</value>
+  </data>
+  <data name="ColumnSubscribeToChangedEvent" xml:space="preserve">
+    <value>subscribeToChangedEvent</value>
+  </data>
+  <data name="ColumnSubscribeToCreatedEvent" xml:space="preserve">
+    <value>subscribeToCreatedEvent</value>
+  </data>
+  <data name="ColumnSubscribeToDeletedEvent" xml:space="preserve">
+    <value>subscribeToDeletedEvent</value>
+  </data>
+  <data name="ColumnSubscribeToRenamedEvent" xml:space="preserve">
+    <value>subscribeToRenamedEvent</value>
+  </data>
+  <data name="DatasetName" xml:space="preserve">
+    <value>fWatcherConfig</value>
+  </data>
+  <data name="FileNotFoundException" xml:space="preserve">
+    <value>File not found.</value>
+  </data>
+  <data name="FileSystemChangeTypeSystemGenerated" xml:space="preserve">
+    <value>System generated</value>
+  </data>
+  <data name="InvalidOperationExceptionError" xml:space="preserve">
+    <value>Standard error cannot be redirected if using shell execute.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileName" xml:space="preserve">
+    <value>No file name specified.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatcherAlreadyStarted" xml:space="preserve">
+    <value>File watcher is already started.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatcherAlreadyStopped" xml:space="preserve">
+    <value>File watcher is already stopped.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatcherControllerIsRunning" xml:space="preserve">
+    <value>File watcher controller is running.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatcherControllerIsStopping" xml:space="preserve">
+    <value>File watcher controller is stopping.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatchersAlreadyStopped" xml:space="preserve">
+    <value>File watchers are already stopped.</value>
+  </data>
+  <data name="InvalidOperationExceptionFileWatchersIsStarting" xml:space="preserve">
+    <value>The file watcher was starting and it cannot be stopped.</value>
+  </data>
+  <data name="InvalidOperationExceptionInput" xml:space="preserve">
+    <value>Standard input cannot be redirected if using shell execute.</value>
+  </data>
+  <data name="InvalidOperationExceptionOutput" xml:space="preserve">
+    <value>Standard output cannot be redirected if using shell execute.</value>
+  </data>
+  <data name="InvalidOperationExceptionPassword" xml:space="preserve">
+    <value>Password cannot be used if using shell execute.</value>
+  </data>
+  <data name="InvalidOperationExceptionUserName" xml:space="preserve">
+    <value>User name cannot be used if using shell execute.</value>
+  </data>
+  <data name="TableName" xml:space="preserve">
+    <value>config</value>
+  </data>
+  <data name="ColumnDisplayFileSystemSearchError" xml:space="preserve">
+    <value>displayFileSystemSearchError</value>
+  </data>
+  <data name="ColumnDisplayFileSystemSearchProgess" xml:space="preserve">
+    <value>displayFileSystemSearchProgress</value>
+  </data>
+  <data name="ColumnLogFileSystemSearchError" xml:space="preserve">
+    <value>logFileSystemSearchError</value>
+  </data>
+  <data name="ColumnLogFileSystemSearchProgress" xml:space="preserve">
+    <value>logFileSystemSearchProgress</value>
+  </data>
+  <data name="ColumnProcessBatchSize" xml:space="preserve">
+    <value>processBatchSize</value>
+  </data>
+  <data name="InvalidOperationExceptionNoEnabledFileWatchers" xml:space="preserve">
+    <value>No enabled file watchers.</value>
+  </data>
+  <data name="InvalidOperationExceptionSynchronousExecutionCannotBeSet" xml:space="preserve">
+    <value>Synchronous execution cannot be set if file watceher controller is active.</value>
+  </data>
+  <data name="ArgumentExceptionUserNameAndShellExecute" xml:space="preserve">
+    <value>User name may not be specified when using shell execute.</value>
+  </data>
+  <data name="ArgumentExceptionDaemonNameIsNotUnique" xml:space="preserve">
+    <value>File watcher daemon name is not unique.</value>
+  </data>
+  <data name="ArgumentExceptionFileNameIsEmpty" xml:space="preserve">
+    <value>File watcher process file name is empty.</value>
+  </data>
+  <data name="ArgumentExceptionPasswordAndShellExecute" xml:space="preserve">
+    <value>Password may not be specified when using shell execute.</value>
+  </data>
+  <data name="ArgumentExceptionPathDoesNotExist" xml:space="preserve">
+    <value>File watcher path does not exist.</value>
+  </data>
+  <data name="ArgumentExceptionRedirectErrorAndShellExecuteSeleted" xml:space="preserve">
+    <value>Redirect error may not be selected when using shell execute.</value>
+  </data>
+  <data name="ArgumentExceptionRedirectOutputAndShellExecuteSeleted" xml:space="preserve">
+    <value>Redirect output may not be selected when using shell execute.</value>
+  </data>
+  <data name="ArgumentExceptionWorkingDirectoryDoesNotExist" xml:space="preserve">
+    <value>File watcher working directory does not exist.</value>
+  </data>
+  <data name="InvalidOperationExceptionConfigurationCannotBeAdded" xml:space="preserve">
+    <value>File watcher configuration cannot be added.</value>
+  </data>
+  <data name="InvalidOperationExceptionConfigurationCannotBeRemoved" xml:space="preserve">
+    <value>File watcher configuration cannot be removed.</value>
+  </data>
+  <data name="InvalidOperationExceptionConfigurationCannotBeUpdated" xml:space="preserve">
+    <value>File watcher configuration cannot be updated.</value>
+  </data>
+  <data name="ColumnProcessDelay" xml:space="preserve">
+    <value>processDelay</value>
+  </data>
+  <data name="ColumnProcessFileMustExist" xml:space="preserve">
+    <value>processFileMustExist</value>
+  </data>
+  <data name="ColumnProcessLockFile" xml:space="preserve">
+    <value>processLockFile</value>
+  </data>
+  <data name="ColumnProcessLockFileLastWriteDelay" xml:space="preserve">
+    <value>processLockFileLastWriteDelay</value>
+  </data>
+  <data name="ColumnProcessLockFileRetries" xml:space="preserve">
+    <value>processLockFileRetries</value>
+  </data>
+  <data name="ColumnProcessLockFileRetriesQueueLimit" xml:space="preserve">
+    <value>processLockFileRetriesQueueLimit</value>
+  </data>
+  <data name="ObjectNameFileWatcherContoller" xml:space="preserve">
+    <value>FileWatcherController</value>
+  </data>
+  <data name="InvalidOperationExceptionConfigurationCannotBeLoaded" xml:space="preserve">
+    <value>File watcher configuration cannot be loaded.</value>
+  </data>
+  <data name="ColumnCallService" xml:space="preserve">
+    <value>callService</value>
+  </data>
+  <data name="ArgumentExceptionCallServiceAndStartProcessAreBothSelected" xml:space="preserve">
+    <value>Call service and start process are both selected.</value>
+  </data>
+  <data name="ArgumentExceptionIdIsEmpty" xml:space="preserve">
+    <value>Argument is Guid.Empty.</value>
+  </data>
+  <data name="ColumnStreamFile" xml:space="preserve">
+    <value>streamFile</value>
+  </data>
+  <data name="ColumnTryRenameFile" xml:space="preserve">
+    <value>tryRenameFile</value>
+  </data>
+  <data name="ColumnTryRenameFileRetries" xml:space="preserve">
+    <value>tryRenameFileRetries</value>
+  </data>
+  <data name="ArgumentExceptionValueCannotBeLessThanZero" xml:space="preserve">
+    <value>Value cannot be less than zero.</value>
+  </data>
+  <data name="ArgumentExceptionQueueTrimIntervalCannotBeNegative" xml:space="preserve">
+    <value>Queue trim interval cannot be negative.</value>
+  </data>
+  <data name="ArgumentExceptionThisVersionDoesNotSupportCallingServices" xml:space="preserve">
+    <value>This version does not support calling services.</value>
+  </data>
+  <data name="ColumnFilteredMode" xml:space="preserve">
+    <value>filteredMode</value>
+  </data>
+  <data name="ColumnFilteredModeFilterTimeout" xml:space="preserve">
+    <value>filteredModeFilterTimeout</value>
+  </data>
+  <data name="ColumnDirectoryPollInterval" xml:space="preserve">
+    <value>directoryPollInterval</value>
+  </data>
+  <data name="ColumnPollDirectory" xml:space="preserve">
+    <value>pollDirectory</value>
+  </data>
+  <data name="ColumnRecycleFileWatcher" xml:space="preserve">
+    <value>recycleFileWatcher</value>
+  </data>
+  <data name="ColumnRecycleInterval" xml:space="preserve">
+    <value>recycleInterval</value>
+  </data>
+</root>
